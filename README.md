@@ -4,35 +4,37 @@ docker-compose for wordpress
 
 ## Setup
 
-1. Edit `docker-compose.yml` file
+I. Edit `docker-compose.yml` file.
 
 ```
 wordpress:
     ...
-    container_name: wordpress <-
+    container_name: OPTIONAL <-
+    volumes:
+      - ./themes/OPTIONAL:/var/www/html/wp-content/themes/OPTIONAL <-
     ...
     ports:
       - "8000:80" <-
     ...
     networks:
-      - wordpress_network <-
+      - OPTIONAL_network <-
     ...
 
   db:
     ...
-    container_name: wordpress_db <-
+    container_name: OPTIONAL_db <-
     ...
     networks:
-      - wordpress_network <-
+      - OPTIONAL_network <-
     ...
 
 ...
 
 networks:
-  wordpress_network: <-
+  OPTIONAL_network: <-
 ```
 
-2. Create `.env` file, write environment variables
+II. Create `.env` file, write environment variables.
 
 examples:
 
@@ -47,8 +49,22 @@ MYSQL_USER=admin
 MYSQL_PASSWORD=password
 ```
 
-3. Run `docker-compose up` command
+III. Run `docker-compose up` command.
 
 ```
 $ docker-compose up -d
+```
+
+IV. Open `http://localhost:8000/`
+
+## Backup
+
+```
+$ docker exec wordpress_db /usr/bin/mysqldump -u admin --password=pass wordpress > wordpress.sql
+```
+
+## Restore
+
+```
+$ docker-compose build
 ```

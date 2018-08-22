@@ -1,0 +1,32 @@
+{
+  "name": "web-starter-kit",
+  "version": "1.0.4",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "repository": "https://github.com/kokushin/web-starter-kit.git",
+  "author": "kokushin <mail@kokush.in>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "del": "^2.2.2",
+    "eslint": "^3.19.0",
+    "eslint-loader": "^1.7.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "run-sequence": "^1.2.2",
+    "webpack": "^2.5.0",
+    "webpack-stream": "^3.2.0",
+    "gulp-watch": "^5.0.0"
+  },
+  "dependencies": {
+  }
+}

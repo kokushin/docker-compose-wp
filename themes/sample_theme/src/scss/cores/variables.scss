@@ -1,0 +1,41 @@
+//
+// Variables
+// -----------------------------------
+
+//
+// Root
+//
+
+$root: "../../.." !default;
+
+
+//
+// Colors
+//
+
+$base-primary-color: #87c74a !default;
+$base-secondary-color: #293a41 !default;
+
+
+//
+// Breakpoint
+//
+
+$base-breakpoint-small: 767px !default;
+$base-breakpoint-medium: 980px !default;
+$base-breakpoint-large:  1200px !default;
+$base-breakpoint-xlarge: 1600px !default;
+
+
+//
+// Typography
+//
+
+$base-font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Hiragino Sans", "Meiryo", sans-serif !default;
+
+
+//
+// Transtions
+//
+
+$transition-hover: opacity .25s ease !default;
