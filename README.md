@@ -55,7 +55,7 @@ III. Run `docker-compose up` command.
 $ docker-compose up -d
 ```
 
-IV. Open `http://localhost:8000/`
+IV. Open `http://localhost:8000/`
 
 ## Backup
 
